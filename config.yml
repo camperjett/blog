@@ -1,0 +1,141 @@
+baseURL: http://camperjett.github.io/blog
+languageCode: en-us
+title: Jady's Blog
+theme: PaperMod
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+enableRobotsTXT: true
+
+sitemap:
+  changefreq: weekly
+  filename: sitemap.xml
+  priority: 0.5
+
+languages:
+    en:
+      languageName: "English"
+      weight: 1
+      taxonomies:
+        category: categories
+        tag: tags
+        series: series
+      menu:
+          main:
+              - name: Archive
+                url: archives
+                weight: 5
+              - name: Search
+                url: search/
+                weight: 10
+              - name: Tags
+                url: tags/
+                weight: 10
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Jady's Blog
+  description: "A blog site owned by Jaideep Sharma currently senior Computer Science & Engineering undergraduate at Indian Institute of Technology (BHU) Varanasi."
+  keywords: [Blog, Portfolio, IIT, College, Indian Institute of Technology, Programming, Problem Solving, Competitive Programming, Development]
+  author: Jaideep Sharma
+  author: ["Jaideep Sharma"] # multiple authors
+  images: ["programmer.jpeg"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: dark
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  homeInfoParams:
+      Title: "Jady"
+      Content: >
+          Welcome to my space!
+
+          - Here I share my journey as a undergrad student and as curious guy learning his way through life!
+
+          - I express my unfiltered inner thoughts to help others and to find those like me. 
+
+          - I usually try to be brief, but sometimes it can turn in TL;DR!
+
+          - Enjoy!
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/camperjett"
+    - name: github
+      url: "https://github.com/camperjett"
+    - name: linkedin
+      url: "https://linkedin.com/in/jaideepsh"
+    - name: instagram
+      url: "https://instagram.com/jady__sh"
+    - name: quora
+      url: "https://www.quora.com/profile/Jaideep-Sharma-33"
+
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+    # for search
+    # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+  menu:
+    main:
+      - identifier: categories
+        name: categories
+        url: /categories/
+        weight: 10
+      - identifier: tags
+        name: tags
+        url: /tags/
+        weight: 20
+      - identifier: Portfolio
+        name: camperjett
+        url: https://camperjett.github.io
+        weight: 30
+    # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+  markup:
+    highlight:
+      noClasses: false
+      # anchorLineNos: true
+      # codeFences: true
+      # guessSyntax: true
+      # lineNos: true
+      style: monokai
