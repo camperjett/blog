@@ -43,11 +43,6 @@ Next day, I tried to revise OS, OOPs, my projects and some DSA problem from Inte
 ## The Battle of Winterfell
 
 ![The Battle of Winterfell](https://media.giphy.com/media/3o7qDYNtT3wVzczm8M/giphy.gif)
-outputs:
-    home:
-        - HTML
-        - RSS
-        - JSON
 Enter 29 July. I woke up at 6:30 am. Microsoft’s round 1 was scheduled at 9 am and we had to reach by 8:30 am. I forgot to have my resume printed before interview. Silly me. Called up anand to get it printed and he managed to do it just in time. I reached ABLT at 8:50 am. First thing I observed was that I was part of male minority. Mostly girls came for the interview. I blamed myself for making a mistake to change my preferences at the last minute because I thought Microsoft came for diversity hiring. Anyway, round 1 began at 9:15 am and was finished by 10:20 am. There was a moderator along with a male interviewer. We greeted each other and I was asked to introduce myself. I did not prepare exact intro but had a basic template in mind (who am I? what I do? what are my interests and aspirations?). 
 
 He then asked to give an overview of one of my projects. I chose my DBMS project. He did not ask any question on it and then moved to ask me 2 DSA problems. First was, given 2 numbers well within integer range, find minimum number of changes in first number in its bit representation to reach the second number. Initially, he asked an incomplete question on the same idea. I guess he did not prepare that problem before-hand. I was able to explain my approach to him. Next question was — Find number of trailing-zeros in decimal representation of N!. I knew the optimal mathematical solution in O(log(n)). However, I first offered a brute force solution of O(n + log(n)) which could easily overflow. He told me that we are going to test it on 20! and wanted a better approach. I offered a O(n * log(n)) solution by prime factorizing each number from 1 to n. He asked me to improve it even further by hinting that we can avoid finding prime factors for each number and instead solve for range.

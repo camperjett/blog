@@ -75,3 +75,5 @@ I did not know much about some of these questions and tried to explain whatever 
 - For coding rounds, Start preparing DSA from early on. I started Competitive programming from January 2023 and did DSA during summer vacations for 2 months and was able to get shortlisted in 5 companies in week 1.
 
 Thanks for reading so far. I hope this helped you. All the best\!
+
+**~JD**
